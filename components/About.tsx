@@ -6,7 +6,7 @@ const Card = dynamic(() => import('../components/Card'), { ssr: false });
 const cards = [
   { image: '/about-photo.webp', text: 'This is the content of the first card.', title: 'I call Vancouver BC my home' },
   { image: '/about-coding-pic.webp', text: 'This is the content of the second card.', title: 'I love coding and building applications' },
-  { image: '/about-music.webp', text: 'This is the content of the third card.', title: 'My hobbies include hiking and painting' },
+  { image: '/about-coding-pic.webp', text: 'This is the content of the third card.', title: 'My hobbies include hiking and painting' },
 ];
 
 const About = () => {

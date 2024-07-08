@@ -11,7 +11,7 @@ interface Props {
 
 const cardVariants: Variants = {
     offscreen: {
-        y: 300,
+        y: 1000,
     },
     onscreen: {
         y: 0,
@@ -19,7 +19,7 @@ const cardVariants: Variants = {
         transition: {
             type: 'spring',
             bounce: 0.4,
-            duration: 0.8,
+            duration: 1.0,
         },
     },
 };
