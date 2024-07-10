@@ -68,7 +68,7 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[200vh]  flex flex-col items-center py-0 md:py-80 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="min-h-[140vh] flex flex-col items-center py-0 md:py-20 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
     >
       <motion.h2
         style={{
@@ -77,11 +77,11 @@ export const MacbookScroll = ({
         }}
         className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center"
       >
-        {title || (
+        {/* {title || (
           <span>
             My Professional Experience 
           </span>
-        )}
+        )} */}
       </motion.h2>
       {/* Lid */}
       <Lid
@@ -177,6 +177,7 @@ export const Lid = ({
           src={src}
           className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
           autoPlay
+          loop
           muted
         />
         </div>

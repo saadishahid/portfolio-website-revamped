@@ -6,7 +6,7 @@ import Image from 'next/image';
 interface Props {
     image: string;
     text: string;
-    position: 'left' | 'right';
+    // position: 'left' | 'right';
 }
 
 const cardVariants: Variants = {
@@ -24,20 +24,21 @@ const cardVariants: Variants = {
     },
 };
 
-const Card = ({ image, text, position }: Props) => {
+const Card = ({ image, text }: Props) => {
     return (
         <motion.div
-            className={`relative overflow-hidden p-5 mb-12 flex items-center justify-center ${position === 'left' ? 'self-start' : 'self-end'}`}
+            className={`relative overflow-hidden p-0 flex items-center justify-center`}
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
+            style={{ transform: 'scale(0.75)' }}
         >
             <motion.div
-                className="relative bg-secondary p-6 rounded-lg shadow-lg"
+                className="relative bg-primary rounded-lg hover:shadow-xl"
                 variants={cardVariants}
+                whileHover={ {scale: 1.1 }}
             >
-                <Image src={image} alt={text} width={410} height={716} className="mb-4 rounded-lg" />
-                <div className="text-lg text-gray-700">{text}</div>
+                <Image src={image} alt={text} width={410} height={716} className="rounded-lg border-black" />
             </motion.div>
         </motion.div>
     );

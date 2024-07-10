@@ -2,16 +2,25 @@ import { ContainerScroll } from "./ContainerScroll";
 
 const Skills = () => {
   return (
-    <section id="skills" className="p-8 bg-primary">
+    <section id="skills" className="p-12 bg-primary text-center">
+      <h2 className="text-4xl md:text-6xl font-bold mb-4 text-dark">Skills</h2>
+      <p className="text-lg md:text-2xl text-gray-700 ">I ❤️ working across the stack!</p>
+
+
       <ContainerScroll titleComponent={<h1></h1>}>
-        <iframe
+        <video
           width="100%"
           height="100%"
-          src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          src="./skills.m4v"
           title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+          playsInline
+          loop
+          autoPlay
+          data-inline-media
+          muted
+          className="flex items-center justify-center w-full h-full"
+          
+        ></video>
       </ContainerScroll>
     </section>
   );
