@@ -3,12 +3,12 @@ import dynamic from 'next/dynamic';
 
 
 // Dynamically import the Card component
-const Card = dynamic(() => import('../components/Card'), { ssr: false });
+const Card = dynamic(() => import('../Card'), { ssr: false });
 
 const cards = [
-  { image: '/about-photo.webp', title: 'I call Vancouver BC my home' },
-  { image: '/about-coding-pic.webp', title: 'I love coding and building applications' },
-  { image: '/about-music.webp', title: '...and dream of becoming a rockstar' },
+  { image: '/assets/about-photo.webp', title: 'I call Vancouver BC my home' },
+  { image: '/assets/about-coding-pic.webp', title: 'I love coding and building applications' },
+  { image: '/assets/about-music.webp', title: '...and dream of becoming a rockstar' },
 ];
 
 const About = () => {

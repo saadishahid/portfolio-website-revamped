@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex justify-center w-full md:w-auto">
           <ul className="hidden md:flex md:space-x-10">
             <li>
-              <a href="#hero" className="block py-2 text-dark hover:text-gray-400 transition">
+              <a href="/" className="block py-2 text-dark hover:text-gray-400 transition">
                 Home
               </a>
             </li>

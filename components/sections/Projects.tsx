@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { MultiStepLoader as Loader } from "./MultiStepLoader";
+import { MultiStepLoader as Loader } from "../MultiStepLoader";
 import Image from 'next/image'; // Import Image component from Next.js
-import SBLogo from "../public/SBLogo.svg"; // Adjust the path if necessary
-import ZBLogo from "../public/zenith_blog.svg"; // Adjust the path if necessary
+import SBLogo from "/public/assets/SBLogo.svg"; // Adjust the path if necessary
+import ZBLogo from "/public/assets/zenith_blog.svg"; // Adjust the path if necessary
 
 const loadingStatesStreamBuddy = [
     {

@@ -1,5 +1,5 @@
-import { TypewriterEffect } from "./Typewriter";
-import { WavyBackground } from "./WavyBackground";
+import { TypewriterEffect } from "../Typewriter";
+import { WavyBackground } from "../WavyBackground";
 
 const Hero = () => {
   const words = [
@@ -35,7 +35,7 @@ const Hero = () => {
     // </section>
 
 
-    <WavyBackground className="max-w-4xl mx-auto pb-0">
+    <WavyBackground id='hero' className="max-w-4xl mx-auto pb-0">
       <p className="text-4xl lg:text-7xl text-dark font-bold inter-var text-center p-4">
         {/* <TypewriterEffect words={firstLine} /> */}
         Hi, I&apos;m Saad

@@ -1,4 +1,4 @@
-import { ContainerScroll } from "./ContainerScroll";
+import { ContainerScroll } from "../ContainerScroll";
 
 const Skills = () => {
   return (
@@ -11,7 +11,7 @@ const Skills = () => {
         <video
           width="100%"
           height="100%"
-          src="./skills.m4v"
+          src="./assets/skills.m4v"
           title="YouTube video player"
           playsInline
           loop
