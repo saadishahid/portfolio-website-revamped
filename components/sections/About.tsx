@@ -29,7 +29,7 @@ const About = () => {
             )}
             {index % 2 !== 0 && (
               <>
-                <h1 className="text-2xl text-black mx-4">{card.title}</h1>
+                <h1 className="hidden md:block text-2xl text-black mx-4">{card.title}</h1>
                 <Card text={''} {...card}  />
                 <h1 className="text-2xl text-black md:hidden mx-4">{card.title}</h1>
 

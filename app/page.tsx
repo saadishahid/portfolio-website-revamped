@@ -14,7 +14,10 @@ export default function HomePage() {
       <Skills />
       <Projects />
       <Experience />
-      <Connect />
+      <div className="relative">
+        <Connect />
+      </div>
+     
     </div>
   );
 }

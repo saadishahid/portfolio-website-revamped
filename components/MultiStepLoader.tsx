@@ -1,4 +1,5 @@
 "use client";
+
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
@@ -50,7 +51,7 @@ const LoaderCore = ({
     <div className="flex relative justify-start max-w-xl mx-auto flex-col mt-40">
       {loadingStates.map((loadingState, index) => {
         const distance = Math.abs(index - value);
-        const opacity = Math.max(1 - distance * 0.2, 0); // Minimum opacity is 0, keep it 0.2 if you're sane.
+        const opacity = Math.max(1 - distance * 0.2, 0);
 
         return (
           <motion.div
@@ -119,25 +120,19 @@ export const MultiStepLoader = ({
 
     return () => clearTimeout(timeout);
   }, [currentState, loading, loop, loadingStates.length, duration]);
+
   return (
     <AnimatePresence mode="wait">
       {loading && (
         <motion.div
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          exit={{
-            opacity: 0,
-          }}
-          className="w-full h-full fixed inset-0 z-[100] flex items-center justify-center backdrop-blur-2xl"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="w-full h-full fixed inset-0 z-[100] flex items-center justify-center backdrop-blur-lg bg-gradient-to-t from-white/30 to-transparent"
         >
-          <div className="h-96  relative">
+          <div className="h-96 relative">
             <LoaderCore value={currentState} loadingStates={loadingStates} />
           </div>
-
           <div className="bg-gradient-to-t inset-x-0 z-20 bottom-0 bg-white dark:bg-black h-full absolute [mask-image:radial-gradient(900px_at_center,transparent_30%,white)]" />
         </motion.div>
       )}

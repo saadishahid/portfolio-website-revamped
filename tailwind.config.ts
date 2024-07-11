@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
 import colors from "tailwindcss/colors";
 
+
 // Custom function to flatten the color palette
 const flattenColorPalette = (obj: any, parentKey = '', res: any = {}) => {
   for (let key in obj) {
@@ -50,6 +51,7 @@ const config: Config = {
   },
   plugins: [
     addVariablesForColors,
+  
   ],
 };
 
