@@ -18,7 +18,20 @@ const Skills = () => {
           autoPlay
           data-inline-media
           muted
-          className="flex items-center justify-center w-full h-full"
+          className="flex items-center justify-center w-full h-full object-fill hidden md:flex"
+          
+        ></video>
+         <video
+          width="100%"
+          height="100%"
+          src="./assets/skills_website_portrait.m4v"
+          title="YouTube video player"
+          playsInline
+          loop
+          autoPlay
+          data-inline-media
+          muted
+          className="flex items-center justify-center w-full h-full  object-fill md:hidden"
           
         ></video>
       </ContainerScroll>

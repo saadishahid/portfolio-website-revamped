@@ -86,10 +86,10 @@ export default function Projects() {
     }, [loadingSB, loadingZB]);
 
     return (
-        <section id="projects" className="p-8 bg-secondary text-center relative">
+        <section id="projects" className="p-12 bg-secondary text-center relative">
         <h2 className="text-4xl md:text-6xl font-bold mb-4 text-dark">Projects</h2>
-        <p className="text-lg md:text-2xl text-gray-700 mb-8">Click to see the projects I am proud of working on 🛠️</p>
-        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-20">
+        <p className="text-lg md:text-2xl text-gray-700 ">Click to see the projects I am proud of working on 🛠️</p>
+        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-20 m-20">
             <div className="w-full md:w-auto flex flex-col items-center">
                 <div className="loader-container">
                     <Loader loadingStates={loadingStatesStreamBuddy} loading={loadingSB} duration={1500} />

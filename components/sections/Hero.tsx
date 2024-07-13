@@ -24,26 +24,32 @@ const Hero = () => {
 
 
   return (
-    // <section id="hero" className="h-screen flex flex-col items-center justify-center bg-primary text-center text-dark">
+    <>
+      <section id="hero" className="h-screen flex flex-col items-center justify-center bg-primary text-center text-dark md:hidden">
 
-    //   <h1 className="text-6xl text-dark font-bold mb-4">Hi, I am Saad</h1>
-    //   <TypewriterEffect words={words} />
+        <p className="text-6xl text-dark font-bold mb-4 md:hidden">Hi, I&apos;m Saad</p>
+        <TypewriterEffect words={words} />
+      </section>
+      <WavyBackground id='hero' className="max-w-4xl mx-auto pb-0">
+        <p className="text-4xl lg:text-7xl text-dark font-bold inter-var text-center p-4">
+          {/* <TypewriterEffect words={firstLine} /> */}
+          Hi, I&apos;m Saad
+        </p>
+        {/* <p className="text-base md:text-lg mt-4 text-dark font-normal inter-var text-center"> */}
+        <TypewriterEffect words={words} />
+        {/* </p> */}
+      </WavyBackground>
+
+
+    </>
 
 
 
 
-    // </section>
 
 
-    <WavyBackground id='hero' className="max-w-4xl mx-auto pb-0">
-      <p className="text-4xl lg:text-7xl text-dark font-bold inter-var text-center p-4">
-        {/* <TypewriterEffect words={firstLine} /> */}
-        Hi, I&apos;m Saad
-      </p>
-      {/* <p className="text-base md:text-lg mt-4 text-dark font-normal inter-var text-center"> */}
-      <TypewriterEffect words={words} />
-      {/* </p> */}
-    </WavyBackground>
+
+
   );
 };
 
