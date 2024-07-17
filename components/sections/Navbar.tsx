@@ -38,11 +38,7 @@ const Navbar = () => {
                 Experience
               </a>
             </li>
-            <li>
-              <a href="#hobbies" className="block py-2 text-dark hover:text-gray-400 transition">
-                Hobbies
-              </a>
-            </li>
+
             <li>
               <a href="#connect" className="block py-2 text-dark hover:text-gray-400 transition">
                 Connect with me
